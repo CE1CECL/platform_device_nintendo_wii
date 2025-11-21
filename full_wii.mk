@@ -2,8 +2,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/nintendo/wii/device.mk)
 
-PRODUCT_NAME := wii
+PRODUCT_NAME := full_wii
 PRODUCT_DEVICE := wii
-PRODUCT_BRAND := Nintendo
-PRODUCT_MODEL := Full AOSP on Nintendo Wii
+PRODUCT_BRAND := NINTENDO
+PRODUCT_MODEL := Full AOSP on Wii
 

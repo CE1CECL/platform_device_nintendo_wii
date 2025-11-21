@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/wii.mk
+	$(LOCAL_DIR)/full_wii.mk

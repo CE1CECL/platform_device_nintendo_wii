@@ -1,14 +1,11 @@
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/nintendo/wii/zImage
-else
+ifneq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
 PRODUCT_COPY_FILES := \
     device/nintendo/wii/vold.fstab:system/etc/vold.fstab \
     device/nintendo/wii/init.wii.rc:root/init.wii.rc \
-    device/nintendo/wii/ueventd.wii.rc:root/ueventd.wii.rc \
-    device/nintendo/wii/modules-4.5.0-wii+/4.5.0-wii+/kernel/drivers/input/mousedev.ko:system/lib/modules/mousedev.ko
+    device/nintendo/wii/ueventd.wii.rc:root/ueventd.wii.rc
 
 PRODUCT_PACKAGES := \
 		    alsa.default \

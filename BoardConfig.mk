@@ -1,4 +1,4 @@
-# Nintendo Wii configuration
+# NINTENDO WII configuration
 
 TARGET_ARCH = powerpc
 TARGET_COMPRESS_MODULE_SYMBOLS := false
@@ -16,8 +16,9 @@ TARGET_BOOTIMAGE_USE_EXT2 := true
 BOARD_HAVE_BLUETOOTH := true
 
 # We do not want the Android build system to try and assemble any sort
-# of images with the Linux Kernel in them, so we set these
-# variables, and provide a zImage for ease of developer use.
+# of images with U-Boot or the Linux Kernel in them, so we set these
+# variables, and provide a uImage and Device Tree (wii.dtb) for ease of
+# developer use.
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := true
 
